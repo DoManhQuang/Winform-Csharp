@@ -1,0 +1,14 @@
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.exe.config
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.exe
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.pdb
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csprojAssemblyReference.cache
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.FormDangNhap.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Properties.Resources.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.GenerateResource.cache
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.CoreCompileInputs.cache
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.exe
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.pdb
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Nguoi_Choi.GiaoDienNguoiChoi.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Nguoi_Choi.ThongTinCaNhan.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form.DangKy.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game.GameAiLaTrieuPhu.resources
