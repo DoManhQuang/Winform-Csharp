@@ -16,8 +16,8 @@ namespace BTL_WinForm_Ailatrieuphu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormDangNhap());
-            Application.Run(new GameAiLaTrieuPhu());
+            Application.Run(new FormDangNhap());
+            //Application.Run(new GameAiLaTrieuPhu());
         }
     }
 }

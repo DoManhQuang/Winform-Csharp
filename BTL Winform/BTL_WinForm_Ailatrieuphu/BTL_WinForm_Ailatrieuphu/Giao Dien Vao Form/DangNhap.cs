@@ -26,14 +26,13 @@ namespace BTL_WinForm_Ailatrieuphu
         }
         public String XuLyTachMaTaiKhoan(String matk)
         {
-
             return matk;
         }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             try
             {
-                string MatkhauMD5 = MD5.getMd5Hash(txtMatkhau.Text.Trim());
+                string MatkhauMD5 = MD5.getMd5Hash(txtMatkhau.Text.Trim()); // mã hóa mật khẩu
                 bool KiemTraDangNhap = layer02.Kiemtradangnhap(txtTaikhoan.Text.Trim(), MatkhauMD5);
                 int ChucNang = layer02.ChucNangNguoiDung(txtTaikhoan.Text.Trim(), MatkhauMD5);
                 
@@ -49,18 +48,18 @@ namespace BTL_WinForm_Ailatrieuphu
                 {
                     throw new LoiDangnhap();
                 }
-                if (ChucNang == 1)
+                if (ChucNang == 1) // người chơi
                 {
                     GiaoDienNguoiChoi GDNC = new GiaoDienNguoiChoi(txtTaikhoan.Text.Trim());
                     this.Hide();
                     GDNC.ShowDialog();
                     this.Close();
                 }
-                else if (ChucNang == 2)
+                else if (ChucNang == 2) // kỹ thuật viên
                 {
 
                 }
-                else if(ChucNang == 3)
+                else if(ChucNang == 3) // quản lý viên
                 {
 
                 }

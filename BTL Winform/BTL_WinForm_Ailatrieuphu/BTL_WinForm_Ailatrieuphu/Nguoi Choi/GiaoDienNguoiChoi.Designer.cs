@@ -32,15 +32,15 @@
             this.btnBatDau = new System.Windows.Forms.Button();
             this.btnThongtin = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnXepHang = new System.Windows.Forms.Button();
             this.btnDangXuat = new System.Windows.Forms.Button();
+            this.btnXepHang = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBatDau
             // 
             this.btnBatDau.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnBatDau.Location = new System.Drawing.Point(321, 441);
+            this.btnBatDau.Location = new System.Drawing.Point(338, 441);
             this.btnBatDau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBatDau.Name = "btnBatDau";
             this.btnBatDau.Size = new System.Drawing.Size(183, 82);
@@ -52,7 +52,7 @@
             // btnThongtin
             // 
             this.btnThongtin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnThongtin.Location = new System.Drawing.Point(86, 441);
+            this.btnThongtin.Location = new System.Drawing.Point(103, 441);
             this.btnThongtin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThongtin.Name = "btnThongtin";
             this.btnThongtin.Size = new System.Drawing.Size(166, 82);
@@ -70,27 +70,16 @@
             this.groupBox1.Controls.Add(this.btnDangXuat);
             this.groupBox1.Controls.Add(this.btnXepHang);
             this.groupBox1.Controls.Add(this.btnBatDau);
-            this.groupBox1.Location = new System.Drawing.Point(18, 2);
+            this.groupBox1.Location = new System.Drawing.Point(-33, -52);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(828, 653);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // btnXepHang
-            // 
-            this.btnXepHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnXepHang.Location = new System.Drawing.Point(562, 441);
-            this.btnXepHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnXepHang.Name = "btnXepHang";
-            this.btnXepHang.Size = new System.Drawing.Size(183, 82);
-            this.btnXepHang.TabIndex = 3;
-            this.btnXepHang.Text = "Xếp Hạng";
-            this.btnXepHang.UseVisualStyleBackColor = true;
-            // 
             // btnDangXuat
             // 
             this.btnDangXuat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnDangXuat.Location = new System.Drawing.Point(562, 51);
+            this.btnDangXuat.Location = new System.Drawing.Point(562, 93);
             this.btnDangXuat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Size = new System.Drawing.Size(183, 82);
@@ -99,11 +88,23 @@
             this.btnDangXuat.UseVisualStyleBackColor = true;
             this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
+            // btnXepHang
+            // 
+            this.btnXepHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnXepHang.Location = new System.Drawing.Point(579, 441);
+            this.btnXepHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnXepHang.Name = "btnXepHang";
+            this.btnXepHang.Size = new System.Drawing.Size(183, 82);
+            this.btnXepHang.TabIndex = 3;
+            this.btnXepHang.Text = "Xếp Hạng";
+            this.btnXepHang.UseVisualStyleBackColor = true;
+            this.btnXepHang.Click += new System.EventHandler(this.btnXepHang_Click);
+            // 
             // GiaoDienNguoiChoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 662);
+            this.ClientSize = new System.Drawing.Size(794, 597);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

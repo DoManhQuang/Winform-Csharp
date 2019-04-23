@@ -99,13 +99,38 @@ as
 
 select dbo.ChucNangNguoiDung('Quangabc','1412')
 
-EXEC TaoTaiKhoanMoi 'TK003','kid','1234',N'kaito kid','1','09999','kid@gmail.com','0','0'
+--EXEC TaoTaiKhoanMoi 'TK003','kid','1234',N'kaito kid','1','09999','kid@gmail.com','0','0'
 
 Update tblCauhoi set TenCH = 'What is Dog ?', Dokho = 1 where MaCH = 'CH00100'
 select * from tblTaikhoan
 insert into tblQuanlyvien values ('QLV001','TK002','CEO')
 insert into tblKyThuatVien values ('KTV001','QLV001','TK003','Dev')
-insert into tblCauhoi values ('CH00100','KTV001','What is Dog',N'Chó Mèo Gà Vịt',N'Chó',5,'B C','A')
+
+insert into tblCauhoi values ('CH00100','KTV001','What is Dog 1',N'Chó Mèo Gà Vịt',N'A',1,'B C','A')
+insert into tblCauhoi values ('CH00101','KTV001','What is Dog 2',N'Chó Mèo Gà Vịt',N'A',1,'B C','A')
+insert into tblCauhoi values ('CH00102','KTV001','What is Dog 3',N'Chó Mèo Gà Vịt',N'A',1,'B C','A')
+insert into tblCauhoi values ('CH00103','KTV001','What is Dog 4',N'Chó Mèo Gà Vịt',N'A',1,'B C','A')
+insert into tblCauhoi values ('CH00104','KTV001','What is Dog 5',N'Chó Mèo Gà Vịt',N'A',1,'B C','A')
+
+insert into tblCauhoi values ('CH00105','KTV001','What is Dog 6',N'Chó Mèo Gà Vịt',N'A',2,'B C','A')
+insert into tblCauhoi values ('CH00106','KTV001','What is Dog 7',N'Chó Mèo Gà Vịt',N'A',2,'B C','A')
+insert into tblCauhoi values ('CH00107','KTV001','What is Dog 8',N'Chó Mèo Gà Vịt',N'A',2,'B C','A')
+insert into tblCauhoi values ('CH00108','KTV001','What is Dog 9',N'Chó Mèo Gà Vịt',N'A',2,'B C','A')
+insert into tblCauhoi values ('CH00109','KTV001','What is Dog 10',N'Chó Mèo Gà Vịt',N'A',2,'B C','A')
+
+insert into tblCauhoi values ('CH0010010','KTV001','What is Dog 11',N'Chó Mèo Gà Vịt',N'A',3,'B C','A')
+insert into tblCauhoi values ('CH0010011','KTV001','What is Dog 12',N'Chó Mèo Gà Vịt',N'A',3,'B C','A')
+insert into tblCauhoi values ('CH0010012','KTV001','What is Dog 13',N'Chó Mèo Gà Vịt',N'A',3,'B C','A')
+insert into tblCauhoi values ('CH0010013','KTV001','What is Dog 14',N'Chó Mèo Gà Vịt',N'A',3,'B C','A')
+insert into tblCauhoi values ('CH0010014','KTV001','What is Dog 15',N'Chó Mèo Gà Vịt',N'A',3,'B C','A')
+
+insert into tblCauhoi values ('CH0010015','KTV001','What is Dog 16',N'Chó Mèo Gà Vịt',N'A',1,'B C','A')
+insert into tblCauhoi values ('CH0010016','KTV001','What is Dog 17',N'Chó Mèo Gà Vịt',N'A',1,'B C','A')
+insert into tblCauhoi values ('CH0010017','KTV001','What is Dog 18',N'Chó Mèo Gà Vịt',N'A',2,'B C','A')
+insert into tblCauhoi values ('CH0010018','KTV001','What is Dog 19',N'Chó Mèo Gà Vịt',N'A',2,'B C','A')
+insert into tblCauhoi values ('CH0010019','KTV001','What is Dog 20',N'Chó Mèo Gà Vịt',N'A',3,'B C','A')
+insert into tblCauhoi values ('CH0010020','KTV001','What is Dog 0',N'Chó Mèo Gà Vịt',N'A',3,'B C','A')
+
 update tblCauhoi set Dapandung = 'A' , Trogiuptuvan = 'A B'
 select * from tblTaikhoan
 select * from tblQuanlyvien
@@ -130,3 +155,38 @@ as
 	end
 go
 select * from dbo.ThongTinCauHoi('CH00100')
+
+create view RanDomMaCauHoiDe
+as
+select top(5) MaCH from tblCauhoi where Dokho = '1' order by NEWID()
+go
+create view RanDomMaCauHoiVua
+as
+select top(5) MaCH from tblCauhoi where Dokho = '2' order by NEWID()
+go
+create view RanDomMaCauHoiKho
+as
+select top(5) MaCH from tblCauhoi where Dokho = '3' order by NEWID()
+go
+
+select * from RanDomMaCauHoiDe ; select * from RanDomMaCauHoiVua ; select * from RanDomMaCauHoiKho
+
+alter proc CapNhapKetQuaChoiGame(@Taikhoan varchar(10), @Cauhoi varchar(50) , @tienThuong varchar(20))
+as
+begin
+	declare @lichSu varchar(50)
+	declare @Kqtot int
+	declare @MaTK varchar(10)
+	select @lichSu = LichSuchoi , @Kqtot = KQtotnhat, @MaTK = tblTaikhoan.MaTK from tblNguoiChoi inner join tblTaikhoan on tblTaikhoan.MaTK = tblNguoiChoi.MaTK where Taikhoan = @Taikhoan
+	if(CAST(@Cauhoi AS INT) < @Kqtot)
+		update tblNguoiChoi set Tienthuong = CAST((CAST(Tienthuong AS int) + CAST(@tienThuong AS int)) AS varchar(20)), 
+		LichSuchoi = @lichSu + ' ' + @Cauhoi where MaTK = @MaTK
+	else
+		update tblNguoiChoi set Tienthuong = CAST((CAST(Tienthuong AS int) + CAST(@tienThuong AS int)) AS varchar(20)), 
+		LichSuchoi = @lichSu + ' ' + @Cauhoi , KQtotnhat = @Cauhoi  where MaTK = @MaTK	
+end
+
+EXEC CapNhapKetQuaChoiGame 'Quang','15','150000'
+select * from tblNguoiChoi
+
+ 

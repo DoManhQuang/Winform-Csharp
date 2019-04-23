@@ -46,5 +46,10 @@ namespace BTL_WinForm_Ailatrieuphu.Nguoi_Choi
             dangNhap.ShowDialog();
             this.Close();
         }
+
+        private void btnXepHang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

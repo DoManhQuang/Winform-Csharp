@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Threading;
 
 namespace BTL_WinForm_Ailatrieuphu.Mo_Hinh_3_Layer.Quang
 {
@@ -43,6 +44,17 @@ namespace BTL_WinForm_Ailatrieuphu.Mo_Hinh_3_Layer.Quang
             }
             return dapAn;
         }
+        public string ChuaHoaTienThuong(string tienThuong)
+        {
+            string[] arrMoney = null;
+            arrMoney = tienThuong.Split(',');
+            string tien = "";
+            foreach (var item in arrMoney)
+            {
+                tien += item.Trim();
+            }
+            return tien;
+        }
         public List<string> LayDuLieuMaCauHoiRanDom()
         {
             List<string> lstIDRandom = new List<string>();
@@ -64,6 +76,19 @@ namespace BTL_WinForm_Ailatrieuphu.Mo_Hinh_3_Layer.Quang
                 lstIDRandom.Add(dataRow["MaCH"].ToString());
             }
             return lstIDRandom;
+        }
+        public void CapNhapKetQuaNguoiChoi(string taikhoan, string cauHoi , string tienThuong)
+        {
+            string cmdText = "EXEC CapNhapKetQuaChoiGame '" + taikhoan + "','" + cauHoi + "','" + tienThuong + "'";
+            Layer01.ExecuteNonQuery(cmdText);
+        }
+        public void Delay(int milliseconds)
+        {
+            //Thread.Sleep(milliseconds);
+            while(milliseconds != 0)
+            {
+                milliseconds--;
+            }
         }
     }
 }

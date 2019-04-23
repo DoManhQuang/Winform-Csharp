@@ -56,7 +56,7 @@ create table tblCauhoi
 (
 	MaCH varchar(10) primary key,
 	MaKTV varchar(10) not null,
-	TenCH nvarchar(50) not null,
+	TenCH nvarchar(100) not null,
 	Dapan nvarchar(100) not null, -- các đáp án của câu hỏi
 	Dapandung nvarchar(20) not null, -- đáp án đúng
 	Dokho int not null, -- độ khó của câu hỏi theo mức độ tăng dần là 1 - 2 -3

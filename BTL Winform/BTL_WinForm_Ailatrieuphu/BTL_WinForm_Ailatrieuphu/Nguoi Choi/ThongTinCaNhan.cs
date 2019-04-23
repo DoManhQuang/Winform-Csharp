@@ -151,7 +151,7 @@ namespace BTL_WinForm_Ailatrieuphu.Nguoi_Choi
 
         private void btnQuayLai_Click(object sender, EventArgs e)
         {
-            GiaoDienNguoiChoi giaoDien = new GiaoDienNguoiChoi();
+            GiaoDienNguoiChoi giaoDien = new GiaoDienNguoiChoi(getTaiKhoanDN());
             this.Hide();
             giaoDien.ShowDialog();
             this.Close();

@@ -130,6 +130,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ky Thuat Vien\" />
+    <Folder Include="Mo Hinh 3 Layer\Long\" />
+    <Folder Include="Mo Hinh 3 Layer\Nhan\" />
     <Folder Include="Quan Ly\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
