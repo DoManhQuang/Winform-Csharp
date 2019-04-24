@@ -26,23 +26,30 @@ namespace BTL_WinForm_Ailatrieuphu.Mo_Hinh_3_Layer.Quang
             dapan = strDapan.Split(' ');
             return dapan;
         }
+        public string ChuanHoaDapAnTroGiupGoiDien(string strDapan)
+        {
+            string[] dapan = null;
+            dapan = strDapan.Split(' ');
+            string strTroGiup = dapan[0].Trim() + " và " + dapan[1].Trim();
+            return strTroGiup;
+        }
         public string[] ChuanHoaDapAn(string dapan)
         {
-            string[] dapAn = new string[4];
+            //string[] dapAn = new string[4];
             string[] strArr = null;
-            string[] strDapAn = null;
-            strArr = dapan.Split(' ');
-            for (int count = 0; count < strArr.Length; count++)
-            {
-                string chuanHoa = null;
-                strDapAn = strArr[count].Split('_');
-                for (int i = 0; i < strDapAn.Length; i++)
-                {
-                    chuanHoa = chuanHoa + strDapAn[i] + " ";
-                }
-                dapAn[count] = chuanHoa;
-            }
-            return dapAn;
+            //string[] strDapAn = null;
+            strArr = dapan.Split('.');
+            //for (int count = 0; count < strArr.Length; count++)
+            //{
+            //    string chuanHoa = null;
+            //    strDapAn = strArr[count].Split('.');
+            //    for (int i = 0; i < strDapAn.Length; i++)
+            //    {
+            //        chuanHoa = chuanHoa + strDapAn[i] + " ";
+            //    }
+            //    dapAn[count] = chuanHoa;
+            //}
+            return strArr;
         }
         public string ChuaHoaTienThuong(string tienThuong)
         {
@@ -84,11 +91,9 @@ namespace BTL_WinForm_Ailatrieuphu.Mo_Hinh_3_Layer.Quang
         }
         public void Delay(int milliseconds)
         {
-            //Thread.Sleep(milliseconds);
-            while(milliseconds != 0)
-            {
-                milliseconds--;
-            }
+            Thread.Sleep(milliseconds);
         }
+
+       
     }
 }

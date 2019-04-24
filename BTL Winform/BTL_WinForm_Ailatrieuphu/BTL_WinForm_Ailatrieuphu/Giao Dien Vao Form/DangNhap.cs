@@ -7,6 +7,10 @@ using BTL_WinForm_Ailatrieuphu.Nguoi_Choi;
 using BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form;
 using System.Data.SqlClient;
 using BTL_WinForm_Ailatrieuphu.Class;
+using BTL_WinForm_Ailatrieuphu.NhanKTV;
+using BTL_WinForm_Ailatrieuphu;
+using QuanLyVien;
+
 namespace BTL_WinForm_Ailatrieuphu
 {
     public partial class FormDangNhap : Form
@@ -57,11 +61,33 @@ namespace BTL_WinForm_Ailatrieuphu
                 }
                 else if (ChucNang == 2) // kỹ thuật viên
                 {
-
+                    string MaKTV = layer02.LayMaKyThuatVien(txtTaikhoan.Text.Trim());
+                    if (MaKTV != null)
+                    {
+                        FormKyThuatVien kyThuatVien = new FormKyThuatVien(MaKTV);
+                        this.Hide();
+                        kyThuatVien.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        throw new MaKTVNULL();
+                    }
                 }
                 else if(ChucNang == 3) // quản lý viên
                 {
-
+                    string MaQLV = layer02.LayMaQuanLyVien(txtTaikhoan.Text.Trim());
+                    if (MaQLV != null)
+                    {
+                        FormQuanLyVien formQuanLy = new FormQuanLyVien(MaQLV);
+                        this.Hide();
+                        formQuanLy.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        throw new MaQLVNULL();
+                    }
                 }
             }
             catch(LoiDangnhap)
@@ -72,6 +98,16 @@ namespace BTL_WinForm_Ailatrieuphu
             catch (Taikhoannull)
             {
                 MessageBox.Show("Không được để trống tài khoản.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Form1_Load(sender, e);
+            }
+            catch (MaQLVNULL)
+            {
+                MessageBox.Show("Không phải tài khoản Quan lý viên.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Form1_Load(sender, e);
+            }
+            catch (MaKTVNULL)
+            {
+                MessageBox.Show("Không phải tài khoản kỹ thuật viên.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Form1_Load(sender, e);
             }
             catch (Matkhaunull)

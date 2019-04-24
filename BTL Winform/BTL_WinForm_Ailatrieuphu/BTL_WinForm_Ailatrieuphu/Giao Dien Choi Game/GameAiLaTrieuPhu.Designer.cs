@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameAiLaTrieuPhu));
-            this.lblCauhoi = new System.Windows.Forms.Label();
             this.btnA = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnD = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtCauHoi = new System.Windows.Forms.TextBox();
             this.btnDauHang = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -55,24 +56,13 @@
             this.btnCau7 = new System.Windows.Forms.Button();
             this.btnCau2 = new System.Windows.Forms.Button();
             this.btnCau1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTrogiup5050)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblCauhoi
-            // 
-            this.lblCauhoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lblCauhoi.AutoSize = true;
-            this.lblCauhoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCauhoi.Location = new System.Drawing.Point(278, 252);
-            this.lblCauhoi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCauhoi.Name = "lblCauhoi";
-            this.lblCauhoi.Size = new System.Drawing.Size(22, 32);
-            this.lblCauhoi.TabIndex = 2;
-            this.lblCauhoi.Text = " ";
             // 
             // btnA
             // 
@@ -125,6 +115,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox1.Controls.Add(this.txtCauHoi);
             this.groupBox1.Controls.Add(this.btnDauHang);
             this.groupBox1.Controls.Add(this.pictureBox5);
             this.groupBox1.Controls.Add(this.pictureBox4);
@@ -149,13 +140,29 @@
             this.groupBox1.Controls.Add(this.btnCau1);
             this.groupBox1.Controls.Add(this.btnB);
             this.groupBox1.Controls.Add(this.btnA);
-            this.groupBox1.Controls.Add(this.lblCauhoi);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(-7, -24);
+            this.groupBox1.Location = new System.Drawing.Point(0, -24);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1049, 630);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtCauHoi
+            // 
+            this.txtCauHoi.AutoCompleteCustomSource.AddRange(new string[] {
+            "  "});
+            this.txtCauHoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtCauHoi.Enabled = false;
+            this.txtCauHoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCauHoi.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtCauHoi.Location = new System.Drawing.Point(275, 185);
+            this.txtCauHoi.Multiline = true;
+            this.txtCauHoi.Name = "txtCauHoi";
+            this.txtCauHoi.Size = new System.Drawing.Size(550, 97);
+            this.txtCauHoi.TabIndex = 14;
+            this.txtCauHoi.Text = " ";
+            this.txtCauHoi.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnDauHang
             // 
@@ -179,6 +186,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 12;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -191,6 +199,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -203,6 +212,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pbTrogiup5050
             // 
@@ -401,6 +411,11 @@
             this.btnCau1.UseVisualStyleBackColor = true;
             this.btnCau1.Click += new System.EventHandler(this.btnB_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // GameAiLaTrieuPhu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -423,7 +438,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblCauhoi;
         private System.Windows.Forms.Button btnA;
         private System.Windows.Forms.Button btnB;
         private System.Windows.Forms.Button btnC;
@@ -449,5 +463,7 @@
         private System.Windows.Forms.Button btnCau7;
         private System.Windows.Forms.Button btnCau2;
         private System.Windows.Forms.Button btnCau1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox txtCauHoi;
     }
 }

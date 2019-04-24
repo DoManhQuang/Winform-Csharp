@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using BTL_WinForm_Ailatrieuphu.Nguoi_Choi;
 using BTL_WinForm_Ailatrieuphu.Mo_Hinh_3_Layer.Quang;
 using System.Drawing;
+using TroGiupKhanGia;
 namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
 {
     public partial class GameAiLaTrieuPhu : Form
@@ -17,6 +18,7 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
         private static string trogiupXoa = null;
         private static string trogiuoTuVan = null;
         private static string dapanDung = null;
+        private static string MaCH = null;
         private static List<string> lstIDRanDom = new List<string>();
         private static string btnClick = null;
         public String getTaiKhoanDN()
@@ -46,6 +48,14 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
         public static string getTroGiupTuVan()
         {
             return trogiuoTuVan;
+        }
+        public static void setMaCauHoi(string ma)
+        {
+            MaCH = ma;
+        }
+        public static string getMaCauHoi()
+        {
+            return MaCH;
         }
         public static void setListIDRanDom(List<string> list)
         {
@@ -218,7 +228,7 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
         }
         public void setTextandButton()
         {
-            lblCauhoi.Text = "";
+            txtCauHoi.Text = "";
             btnA.Text = "";
             btnB.Text = "";
             btnC.Text = "";
@@ -232,54 +242,57 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
             btnC.BackColor = Color.Transparent;
             btnD.BackColor = Color.Transparent;
         }
-        public void EventBtnFilcker(string btnName)
-        {
-            if(string.Equals(btnName,"A"))
-            {
-                    btnA.BackColor = Color.Yellow;
-                    layer02.Delay(1000000);
-                    btnA.BackColor = Color.Green;
-                    layer02.Delay(1000000);
-                    btnA.BackColor = Color.Yellow;
-                    layer02.Delay(1000000);
-                    btnA.BackColor = Color.Green;
-            }
-            else if (string.Equals(btnName, "B"))
-            {
-                for (int i = 0; i < 10; i++)
-                {
-                    btnB.BackColor = Color.Yellow;
-                    layer02.Delay(200);
-                    btnB.BackColor = Color.Green;
-                    layer02.Delay(200);
-                }
-            }
-            else if (string.Equals(btnName, "C"))
-            {
-                for (int i = 0; i < 10; i++)
-                {
-                    btnA.BackColor = Color.Yellow;
-                    layer02.Delay(200);
-                    btnA.BackColor = Color.Green;
-                    layer02.Delay(200);
-                }
-            }
-            else
-            {
-                for (int i = 0; i < 10; i++)
-                {
-                    btnD.BackColor = Color.Yellow;
-                    layer02.Delay(200);
-                    btnD.BackColor = Color.Green;
-                    layer02.Delay(200);
-                }
-            }
-        }
+        //public void EventBtnFilcker(string btnName)
+        //{
+        //    if(string.Equals(btnName,"A"))
+        //    {
+        //        btnA.BackColor = Color.Green;
+        //        timer1.Start();
+
+        //            //layer02.Delay(1000);
+        //           // btnA.BackColor = Color.Green;
+        //            //layer02.Delay(5000);
+        //            //btnA.BackColor = Color.Yellow;
+        //            //layer02.Delay(5000);
+        //            //btnA.BackColor = Color.Green;
+        //    }
+        //    else if (string.Equals(btnName, "B"))
+        //    {
+        //        for (int i = 0; i < 10; i++)
+        //        {
+        //            btnB.BackColor = Color.Yellow;
+        //            layer02.Delay(500);
+        //            btnB.BackColor = Color.Green;
+        //            layer02.Delay(500);
+        //        }
+        //    }
+        //    else if (string.Equals(btnName, "C"))
+        //    {
+        //        for (int i = 0; i < 10; i++)
+        //        {
+        //            btnA.BackColor = Color.Yellow;
+        //            layer02.Delay(500);
+        //            btnA.BackColor = Color.Green;
+        //            layer02.Delay(500);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        for (int i = 0; i < 10; i++)
+        //        {
+        //            btnD.BackColor = Color.Yellow;
+        //            layer02.Delay(500);
+        //            btnD.BackColor = Color.Green;
+        //            layer02.Delay(500);
+        //        }
+        //    }
+        //}
         private void GameAiLaTrieuPhu_Load(object sender, EventArgs e)
         {
             string cauHoi = "";
             setTextandButton();
-            DataTable tableCauHoi = layer02.getQuestion(getListIDRanDom()[number]);
+            setMaCauHoi(getListIDRanDom()[number]);
+            DataTable tableCauHoi = layer02.getQuestion(getMaCauHoi());
             string[] DapanChuan = null;
             foreach (DataRow dataRow in tableCauHoi.Rows)
             {
@@ -288,13 +301,13 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
                 setDapandung(dataRow["Dapandung"].ToString());
                 setTroGiupXoa(dataRow["Trogiupxoa"].ToString());
                 setTroGiupTuVan(dataRow["Trogiuptuvan"].ToString());
-            }
-            lblCauhoi.Text += "Câu Hỏi : " + cauHoi.ToString();
-            btnA.Text += "A : " + DapanChuan[0].ToString();
-            btnB.Text += "B : " + DapanChuan[1].ToString();
-            btnC.Text += "C : " + DapanChuan[2].ToString();
-            btnD.Text += "D : " + DapanChuan[3].ToString();
+            }  
+            btnA.Text +=  DapanChuan[0].ToString().Trim();
+            btnB.Text +=  DapanChuan[1].ToString().Trim();
+            btnC.Text +=  DapanChuan[2].ToString().Trim();
+            btnD.Text +=  DapanChuan[3].ToString().Trim();
             number++;
+            txtCauHoi.Text += "Câu Hỏi " + number + " : " + cauHoi + "?";
         }
 
         private void pbTrogiup5050_Click(object sender, EventArgs e)
@@ -309,22 +322,22 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
                     {
                         if (String.Equals("A", item.Trim()))
                         {
-                            btnA.Text = "";
+                            btnA.Text = "A :";
                             btnA.Enabled = false;
                         }
                         else if (String.Equals("B", item.Trim()))
                         {
-                            btnB.Text = "";
+                            btnB.Text = "B :";
                             btnB.Enabled = false;
                         }
                         else if (String.Equals("C", item.Trim()))
                         {
-                            btnC.Text = "";
+                            btnC.Text = "C :";
                             btnC.Enabled = false;
                         }
                         else if (String.Equals("D", item.Trim()))
                         {
-                            btnD.Text = "";
+                            btnD.Text = "D :";
                             btnD.Enabled = false;
                         }
                     }
@@ -346,17 +359,18 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
                     btnA.BackColor = Color.Orange;
                     if (string.Equals("A", dapanDung.ToUpper().Trim()))
                     {
-                        EventBtnFilcker("A");
-                        MessageBox.Show("Đó là câu trả lời đúng.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //EventBtnFilcker("A");
+                        //MessageBox.Show("Đó là câu trả lời đúng.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         setButtonColor(number);
                         GameAiLaTrieuPhu_Load(sender, e);
                     }
                     else
                     {
-                        btnA.BackColor = Color.Red;
+                        
                         tienThuong = layer02.ChuaHoaTienThuong(getButtonText(number));
                         layer02.CapNhapKetQuaNguoiChoi(getTaiKhoanDN(),(number - 1).ToString(),tienThuong);
-                        MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        btnA.BackColor = Color.Red;
+                        //MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         btnDauHang_Click(sender, e);
                     }
                 }
@@ -376,17 +390,18 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
                     btnB.BackColor = Color.Orange;
                     if (string.Equals("B", dapanDung.ToUpper().Trim()))
                     {
-                        EventBtnFilcker("B");
-                        MessageBox.Show("Đó là câu trả lời đúng.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //EventBtnFilcker("B");
+                        //MessageBox.Show("Đó là câu trả lời đúng.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         setButtonColor(number);
                         GameAiLaTrieuPhu_Load(sender, e);
                     }
                     else
                     {
-                        btnB.BackColor = Color.Red;
+                        
                         tienThuong = layer02.ChuaHoaTienThuong(getButtonText(number));
                         layer02.CapNhapKetQuaNguoiChoi(getTaiKhoanDN(), (number - 1).ToString(), tienThuong);
-                        MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        btnB.BackColor = Color.Red;
+                        //MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         btnDauHang_Click(sender, e);
                     }
                 }
@@ -408,17 +423,18 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
                     if (string.Equals("C", dapanDung.ToUpper().Trim()))
                     {
                         
-                        EventBtnFilcker("C");
+                        //EventBtnFilcker("C");
                         MessageBox.Show("Đó là câu trả lời đúng.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         setButtonColor(number);
                         GameAiLaTrieuPhu_Load(sender, e);
                     }
                     else
                     {
-                        btnC.BackColor = Color.Red;
+                        
                         tienThuong = layer02.ChuaHoaTienThuong(getButtonText(number));
                         layer02.CapNhapKetQuaNguoiChoi(getTaiKhoanDN(), (number - 1).ToString(), tienThuong);
-                        MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        btnC.BackColor = Color.Red;
+                        //MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         btnDauHang_Click(sender, e);
                     }
                 }
@@ -440,17 +456,20 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
                     if (string.Equals("D", dapanDung.ToUpper().Trim()))
                     {
                         
-                        EventBtnFilcker("D");
-                        MessageBox.Show("Đó là câu trả lời đúng.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //EventBtnFilcker("D");
+                        //MessageBox.Show("Đó là câu trả lời đúng.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         setButtonColor(number);
                         GameAiLaTrieuPhu_Load(sender, e);
                     }
                     else
                     {
-                        btnD.BackColor = Color.Red;
+                        
                         tienThuong = layer02.ChuaHoaTienThuong(getButtonText(number));
                         layer02.CapNhapKetQuaNguoiChoi(getTaiKhoanDN(), (number - 1).ToString(), tienThuong);
-                        MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
+                        timer1.Start();
+                        btnD.BackColor = Color.Red;
+                        //MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         btnDauHang_Click(sender, e);
                     }
                 }
@@ -459,6 +478,54 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn Chọn trợ giúp gọi điện cho người thân ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult.Yes == dialogResult)
+            {
+                string dapanGoiDien= layer02.ChuanHoaDapAnTroGiupGoiDien(getTroGiupTuVan());
+                MessageBox.Show("Đáp án mà tôi chọn là " + dapanGoiDien, "Trợ Giúp Gọi Điện", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                pictureBox3.Hide();
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn Chọn trợ giúp chuyên gia tư vấn tại chỗ ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (DialogResult.Yes == dialogResult)
+            {
+                MessageBox.Show("Đáp án mà tôi chọn là " + getDapandung(), "Trợ Giúp Gọi Điện", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                pictureBox5.Hide();
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            GUITroGiupKhanGia troGiupKhanGia = new GUITroGiupKhanGia(getMaCauHoi());
+            troGiupKhanGia.Show();
+            pictureBox4.Hide();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCauhoi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

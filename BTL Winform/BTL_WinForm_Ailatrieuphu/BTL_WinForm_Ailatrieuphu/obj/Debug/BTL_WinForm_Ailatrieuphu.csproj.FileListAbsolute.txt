@@ -1,14 +1,47 @@
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.exe.config
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.exe
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.pdb
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Form1.resources
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Properties.Resources.resources
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.GenerateResource.Cache
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.exe
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.pdb
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\ExcelDataReader.DataSet.dll
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\ExcelDataReader.dll
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\ExcelDataReader.xml
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\ExcelDataReader.DataSet.xml
+D:\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csprojResolveAssemblyReference.cache
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.exe.config
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.exe
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.pdb
-G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csprojAssemblyReference.cache
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\ExcelDataReader.dll
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\bin\Debug\ExcelDataReader.xml
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game.GameAiLaTrieuPhu.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form.DangKy.resources
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.FormDangNhap.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Nguoi_Choi.GiaoDienNguoiChoi.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Nguoi_Choi.ThongTinCaNhan.resources
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Properties.Resources.resources
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.GenerateResource.cache
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.CoreCompileInputs.cache
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.CopyComplete
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.exe
 G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.pdb
-G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Nguoi_Choi.GiaoDienNguoiChoi.resources
-G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Nguoi_Choi.ThongTinCaNhan.resources
-G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form.DangKy.resources
-G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game.GameAiLaTrieuPhu.resources
+G:\Project Winforms\BTL Winform\BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.FormKTV.resources
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.exe.config
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.exe
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\bin\Debug\BTL_WinForm_Ailatrieuphu.pdb
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\bin\Debug\ExcelDataReader.dll
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\bin\Debug\ExcelDataReader.xml
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csprojAssemblyReference.cache
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game.GameAiLaTrieuPhu.resources
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form.DangKy.resources
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.FormDangNhap.resources
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Nguoi_Choi.GiaoDienNguoiChoi.resources
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Nguoi_Choi.ThongTinCaNhan.resources
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.Properties.Resources.resources
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.GenerateResource.cache
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.CoreCompileInputs.cache
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.csproj.CopyComplete
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.exe
+G:\Project Winforms\BTL Winform\BTL WinForm Quang\BTL_WinForm_Ailatrieuphu\obj\Debug\BTL_WinForm_Ailatrieuphu.pdb

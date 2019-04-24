@@ -5,6 +5,9 @@ using System.Windows.Forms;
 using BTL_WinForm_Ailatrieuphu.Nguoi_Choi;
 using BTL_WinForm_Ailatrieuphu.Giao_Dien_Choi_Game;
 using BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form;
+using BTL_WinForm_Ailatrieuphu.Nguoi_Choi;
+using LichSuChoi;
+
 namespace BTL_WinForm_Ailatrieuphu.Nguoi_Choi
 {
     public partial class GiaoDienNguoiChoi : Form
@@ -49,7 +52,8 @@ namespace BTL_WinForm_Ailatrieuphu.Nguoi_Choi
 
         private void btnXepHang_Click(object sender, EventArgs e)
         {
-
+            XepHangNguoiChoi xepHang = new XepHangNguoiChoi();
+            xepHang.ShowDialog();
         }
     }
 }

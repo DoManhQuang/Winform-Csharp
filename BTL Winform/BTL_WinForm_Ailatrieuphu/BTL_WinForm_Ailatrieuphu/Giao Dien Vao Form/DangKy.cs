@@ -18,10 +18,6 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form
 
         BLLayer02 Layer02 = new BLLayer02();
         SecurityMD5 MD5 = new SecurityMD5();
-        public String MaTaiKhoanTuDong()
-        {
-            return "TK00" + (Layer02.SoLuongMaSanPham() + 1);
-        }
 
         private void btnDangky_Click(object sender, EventArgs e)
         {
@@ -42,6 +38,10 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form
                 {
                     throw new NameNull();
                 }
+                if(Layer02.GetMaTKNew() == null)
+                {
+                    throw new MaTKNULL();
+                }
                 if (!Int32.TryParse(txtSDT.Text.Trim(), out int result) && txtSDT.Text.Trim() != "")
                 {
                     throw new FormatException();
@@ -50,13 +50,17 @@ namespace BTL_WinForm_Ailatrieuphu.Giao_Dien_Vao_Form
                 {
                     throw new ErrorAccount();
                 }
-                if (!Layer02.DangKyTaiKhoanNguoiChoi(MaTaiKhoanTuDong(), txtTaikhoan.Text.Trim(), MatkhauMD5, txtHovaTen.Text.Trim()
+                if (!Layer02.DangKyTaiKhoanNguoiChoi(Layer02.GetMaTKNew(), txtTaikhoan.Text.Trim(), MatkhauMD5, txtHovaTen.Text.Trim()
                     , gioiTinh, txtSDT.Text.Trim(), txtEmail.Text.Trim(), 0,1))
                 {
                     throw new ErrorSignUp();
                 }
                 MessageBox.Show("Đăng ký tài khoản thành công.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 DangKy_Load(sender, e);
+            }
+            catch (MaTKNULL)
+            {
+                MessageBox.Show("Không thể tạo mới tài khoản.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (NullAccount)
             {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTL_WinForm_Ailatrieuphu", "BTL_WinForm_Ailatrieuphu\BTL_WinForm_Ailatrieuphu.csproj", "{E2AAA3A9-5A64-4B03-AF98-4B4F0998E82E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AiLaTrieuPhu", "BTL_WinForm_Ailatrieuphu\AiLaTrieuPhu.csproj", "{E2AAA3A9-5A64-4B03-AF98-4B4F0998E82E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

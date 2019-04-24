@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2AAA3A9-5A64-4B03-AF98-4B4F0998E82E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTL_WinForm_Ailatrieuphu</RootNamespace>
+    <AssemblyName>BTL_WinForm_Ailatrieuphu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelDataReader">
+      <HintPath>..\..\ExcelDataReader.3.4.0\ExcelDataReader.3.4.0\lib\net20\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Giao Dien Vao Form\MaKTVNULL.cs" />
+    <Compile Include="Giao Dien Choi Game\GUITroGiupKhanGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giao Dien Choi Game\GUITroGiupKhanGia.Designer.cs">
+      <DependentUpon>GUITroGiupKhanGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nguoi Choi\XepHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nguoi Choi\XepHang.Designer.cs">
+      <DependentUpon>XepHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mo Hinh 3 Layer\Long\BLL.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Long\ChuanHoaTen.cs" />
+    <Compile Include="Class\SecurityMD5.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Long\ClassChuanHoaEmail.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Long\ClassChuanHoaTen.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Long\DAL.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Long\EmailChuanHoa.cs" />
+    <Compile Include="Giao Dien Choi Game\GameAiLaTrieuPhu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giao Dien Choi Game\GameAiLaTrieuPhu.Designer.cs">
+      <DependentUpon>GameAiLaTrieuPhu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giao Dien Vao Form\DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giao Dien Vao Form\DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giao Dien Vao Form\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giao Dien Vao Form\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\ErrorAccount.cs" />
+    <Compile Include="Class\ErrorSignUp.cs" />
+    <Compile Include="Class\LoiDangnhap.cs" />
+    <Compile Include="Class\Matkhaunull.cs" />
+    <Compile Include="Class\NullAccount.cs" />
+    <Compile Include="Class\Taikhoannull.cs" />
+    <Compile Include="Class\MaTKNULL.cs" />
+    <Compile Include="Class\MaKTVNULL.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Quang\BLGameLayer02.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Quang\BLLayer02.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Quang\DALayer01.cs" />
+    <Compile Include="Nguoi Choi\GiaoDienNguoiChoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nguoi Choi\GiaoDienNguoiChoi.Designer.cs">
+      <DependentUpon>GiaoDienNguoiChoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\NULLException.cs" />
+    <Compile Include="Class\NameNull.cs" />
+    <Compile Include="Nguoi Choi\ThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nguoi Choi\ThongTinCaNhan.Designer.cs">
+      <DependentUpon>ThongTinCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mo Hinh 3 Layer\Nhan\BLLCauHoi.cs" />
+    <Compile Include="Mo Hinh 3 Layer\Nhan\CauHoiDTO.cs" />
+    <Compile Include="NhanKTV\CauHoiResourse.Designer.cs">
+      <DependentUpon>CauHoiResourse.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Mo Hinh 3 Layer\Nhan\DALCauHoi.cs" />
+    <Compile Include="NhanKTV\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanKTV\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quan Ly\QuanLyVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quan Ly\QuanLyVien.Designer.cs">
+      <DependentUpon>QuanLyVien.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Giao Dien Choi Game\GameAiLaTrieuPhu.resx">
+      <DependentUpon>GameAiLaTrieuPhu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giao Dien Vao Form\DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giao Dien Vao Form\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giao Dien Choi Game\GUITroGiupKhanGia.resx">
+      <DependentUpon>GUITroGiupKhanGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nguoi Choi\XepHang.resx">
+      <DependentUpon>XepHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nguoi Choi\GiaoDienNguoiChoi.resx">
+      <DependentUpon>GiaoDienNguoiChoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nguoi Choi\ThongTinCaNhan.resx">
+      <DependentUpon>ThongTinCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanKTV\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quan Ly\QuanLyVien.resx">
+      <DependentUpon>QuanLyVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="NhanKTV\CauHoiResourse.xsc">
+      <DependentUpon>CauHoiResourse.xsd</DependentUpon>
+    </None>
+    <None Include="NhanKTV\CauHoiResourse.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CauHoiResourse.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NhanKTV\CauHoiResourse.xss">
+      <DependentUpon>CauHoiResourse.xsd</DependentUpon>
+    </None>
+    <None Include="NhanKTV\ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\1456991289-ai-l---tri---u-ph---cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\Ai_la_trieu_phu_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\dong.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\file.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\lup.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\sua.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\tk2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\update.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NhanKTV\Resources\xoa.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

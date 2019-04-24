@@ -25,15 +25,22 @@ namespace BTL_WinForm_Ailatrieuphu.Mo_Hinh_3_Layer
             DataTable dataTable = Layer01.GetDataTable(cmdText);
             return dataTable;
         }
-        public int SoLuongMaSanPham() // tổng số lượng mã sản phẩm hiện tại trong database.
+        public string XuLyMaTK(string matk)
         {
-            string cmdText = "select count(MaTK) from tblTaikhoan";
+            matk = matk.Remove(0, 2);
+            int matkNew = int.Parse(matk) + 1;
+            matk = "TK00" + matkNew;
+            return matk;
+        }
+        public string GetMaTKNew()
+        {
+            string cmdText = "select dbo.MaxMaTKTheoChucNang('1')";
             SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
             if (dataReader.Read())
             {
-                return Int32.Parse(dataReader[0].ToString());// index = 0 chỉ thứ tự được select ra ở đây thứ tự 0 là count(ma)
+                return XuLyMaTK(dataReader[0].ToString());
             }
-            return 0; // chưa có mã nào trong bảng sản phẩm.
+            return null;
         }
         public bool Kiemtratentaikhoan(string taikhoan)
         {
@@ -110,6 +117,26 @@ namespace BTL_WinForm_Ailatrieuphu.Mo_Hinh_3_Layer
                 return int.Parse(dataReader[0].ToString());// index = 0 chỉ thứ tự được select ra ở đây thứ tự 0 là count(ma)
             }
             return 0;
+        }
+        public string LayMaKyThuatVien(string taikhoan)
+        {
+            string cmdText = "select dbo.LayMaKTV('" + taikhoan + "')";
+            SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
+            if(dataReader.Read())
+            {
+                return dataReader[0].ToString().Trim();
+            }
+            return null;
+        }
+        public string LayMaQuanLyVien(string taikhoan)
+        {
+            string cmdText = "select dbo.LayMaQLV('" + taikhoan + "')";
+            SqlDataReader dataReader = Layer01.GetExecuteReader(cmdText);
+            if (dataReader.Read())
+            {
+                return dataReader[0].ToString().Trim();
+            }
+            return null;
         }
     }
 }
