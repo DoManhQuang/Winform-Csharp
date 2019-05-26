@@ -1,0 +1,10 @@
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\bin\Debug\datagridview.exe.config
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\bin\Debug\datagridview.exe
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\bin\Debug\datagridview.pdb
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\obj\Debug\datagridview.csprojAssemblyReference.cache
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\obj\Debug\datagridview.Form1.resources
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\obj\Debug\datagridview.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\obj\Debug\datagridview.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\obj\Debug\datagridview.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\obj\Debug\datagridview.exe
+G:\Programming\Csharp\Youtube\datagridview\datagridview\datagridview\obj\Debug\datagridview.pdb

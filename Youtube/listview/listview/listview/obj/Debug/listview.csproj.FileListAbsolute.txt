@@ -1,0 +1,10 @@
+G:\Programming\Csharp\Youtube\listview\listview\listview\bin\Debug\listview.exe.config
+G:\Programming\Csharp\Youtube\listview\listview\listview\bin\Debug\listview.exe
+G:\Programming\Csharp\Youtube\listview\listview\listview\bin\Debug\listview.pdb
+G:\Programming\Csharp\Youtube\listview\listview\listview\obj\Debug\listview.csprojAssemblyReference.cache
+G:\Programming\Csharp\Youtube\listview\listview\listview\obj\Debug\listview.Form1.resources
+G:\Programming\Csharp\Youtube\listview\listview\listview\obj\Debug\listview.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\listview\listview\listview\obj\Debug\listview.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\listview\listview\listview\obj\Debug\listview.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\listview\listview\listview\obj\Debug\listview.exe
+G:\Programming\Csharp\Youtube\listview\listview\listview\obj\Debug\listview.pdb

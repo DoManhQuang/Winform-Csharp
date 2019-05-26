@@ -1,0 +1,10 @@
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\bin\Debug\TextBox.exe.config
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\bin\Debug\TextBox.exe
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\bin\Debug\TextBox.pdb
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\obj\Debug\TextBox.Form1.resources
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\obj\Debug\TextBox.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\obj\Debug\TextBox.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\obj\Debug\TextBox.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\obj\Debug\TextBox.exe
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\obj\Debug\TextBox.pdb
+G:\Programming\Csharp\Youtube\TextBox\TextBox\TextBox\obj\Debug\TextBox.csprojAssemblyReference.cache

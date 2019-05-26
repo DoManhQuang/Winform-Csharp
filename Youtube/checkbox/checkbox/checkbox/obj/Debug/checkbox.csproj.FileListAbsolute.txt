@@ -1,0 +1,10 @@
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\bin\Debug\checkbox.exe.config
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\bin\Debug\checkbox.exe
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\bin\Debug\checkbox.pdb
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\obj\Debug\checkbox.Form1.resources
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\obj\Debug\checkbox.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\obj\Debug\checkbox.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\obj\Debug\checkbox.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\obj\Debug\checkbox.exe
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\obj\Debug\checkbox.pdb
+G:\Programming\Csharp\Youtube\checkbox\checkbox\checkbox\obj\Debug\checkbox.csprojAssemblyReference.cache

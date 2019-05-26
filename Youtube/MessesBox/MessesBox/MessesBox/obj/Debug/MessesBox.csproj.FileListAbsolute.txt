@@ -1,0 +1,9 @@
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\bin\Debug\MessesBox.exe.config
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\bin\Debug\MessesBox.exe
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\bin\Debug\MessesBox.pdb
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\obj\Debug\MessesBox.Form1.resources
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\obj\Debug\MessesBox.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\obj\Debug\MessesBox.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\obj\Debug\MessesBox.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\obj\Debug\MessesBox.exe
+G:\Programming\Csharp\Youtube\MessesBox\MessesBox\MessesBox\obj\Debug\MessesBox.pdb

@@ -1,0 +1,10 @@
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\bin\Debug\listbox.exe.config
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\bin\Debug\listbox.exe
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\bin\Debug\listbox.pdb
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\obj\Debug\listbox.csprojAssemblyReference.cache
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\obj\Debug\listbox.Form1.resources
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\obj\Debug\listbox.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\obj\Debug\listbox.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\obj\Debug\listbox.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\obj\Debug\listbox.exe
+G:\Programming\Csharp\Youtube\listbox\listbox\listbox\obj\Debug\listbox.pdb

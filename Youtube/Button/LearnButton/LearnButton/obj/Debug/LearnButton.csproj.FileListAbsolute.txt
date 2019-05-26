@@ -1,0 +1,10 @@
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\bin\Debug\LearnButton.exe.config
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\bin\Debug\LearnButton.exe
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\bin\Debug\LearnButton.pdb
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\obj\Debug\LearnButton.csprojAssemblyReference.cache
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\obj\Debug\LearnButton.Form1.resources
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\obj\Debug\LearnButton.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\obj\Debug\LearnButton.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\obj\Debug\LearnButton.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\obj\Debug\LearnButton.exe
+G:\Programming\Csharp\Youtube\Button\LearnButton\LearnButton\obj\Debug\LearnButton.pdb

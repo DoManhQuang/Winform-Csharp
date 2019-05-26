@@ -1,0 +1,10 @@
+G:\Programming\Csharp\Youtube\label\label\label\bin\Debug\label.exe.config
+G:\Programming\Csharp\Youtube\label\label\label\bin\Debug\label.exe
+G:\Programming\Csharp\Youtube\label\label\label\bin\Debug\label.pdb
+G:\Programming\Csharp\Youtube\label\label\label\obj\Debug\label.csprojAssemblyReference.cache
+G:\Programming\Csharp\Youtube\label\label\label\obj\Debug\label.Form1.resources
+G:\Programming\Csharp\Youtube\label\label\label\obj\Debug\label.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\label\label\label\obj\Debug\label.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\label\label\label\obj\Debug\label.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\label\label\label\obj\Debug\label.exe
+G:\Programming\Csharp\Youtube\label\label\label\obj\Debug\label.pdb

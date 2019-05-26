@@ -1,0 +1,9 @@
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\bin\Debug\datetimepicker.exe.config
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\bin\Debug\datetimepicker.exe
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\bin\Debug\datetimepicker.pdb
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\obj\Debug\datetimepicker.Form1.resources
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\obj\Debug\datetimepicker.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\obj\Debug\datetimepicker.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\obj\Debug\datetimepicker.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\obj\Debug\datetimepicker.exe
+G:\Programming\Csharp\Youtube\datetimepicker\datetimepicker\datetimepicker\obj\Debug\datetimepicker.pdb

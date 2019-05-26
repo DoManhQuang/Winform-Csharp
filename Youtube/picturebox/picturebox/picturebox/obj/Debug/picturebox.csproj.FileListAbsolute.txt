@@ -1,0 +1,9 @@
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\bin\Debug\picturebox.exe.config
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\bin\Debug\picturebox.exe
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\bin\Debug\picturebox.pdb
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\obj\Debug\picturebox.Form1.resources
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\obj\Debug\picturebox.Properties.Resources.resources
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\obj\Debug\picturebox.csproj.GenerateResource.cache
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\obj\Debug\picturebox.csproj.CoreCompileInputs.cache
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\obj\Debug\picturebox.exe
+G:\Programming\Csharp\Youtube\picturebox\picturebox\picturebox\obj\Debug\picturebox.pdb
