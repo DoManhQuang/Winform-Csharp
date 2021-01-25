@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qnMuLKG3IoJYeDZsUtijcOFMQedSYfII+ij6DPZrGq6Ixzj97W5P+Cvqkey51D9gdjc/Hwc5jZbZnQQES/3U+A==",
+  "dgSpecHash": "Wgl4TLARavrccDEkY/pzhuszDpdgirfOlpFsUoRSszpmDgPdjEZRpsv4riARf9YDshDJ5iY202k4fd8cMLCHIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\Winform-Csharp\\BTL_MONGODB\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SW NC R&D PART\\.nuget\\packages\\dnsclient\\1.3.1\\dnsclient.1.3.1.nupkg.sha512",
     "C:\\Users\\SW NC R&D PART\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",

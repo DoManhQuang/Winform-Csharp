@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
+    "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\Winform-Csharp\\BTL_MONGODB\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
+    "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\Winform-Csharp\\BTL_MONGODB\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\Winform-Csharp\\BTL_MONGODB\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "projectName": "WindowsFormsApp1",
-        "projectPath": "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectPath": "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\Winform-Csharp\\BTL_MONGODB\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "packagesPath": "C:\\Users\\SW NC R&D PART\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\WindowsFormsApp1\\WindowsFormsApp1\\obj\\",
+        "outputPath": "C:\\Users\\SW NC R&D PART\\Desktop\\quang\\Winform-Csharp\\BTL_MONGODB\\WindowsFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SW NC R&D PART\\AppData\\Roaming\\NuGet\\NuGet.Config",
