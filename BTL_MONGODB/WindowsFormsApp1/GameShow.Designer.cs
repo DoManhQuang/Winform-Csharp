@@ -68,7 +68,7 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.btnChoiLai);
@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.btn10);
             this.panel1.Controls.Add(this.btn13);
             this.panel1.Controls.Add(this.btn15);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, -71);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1533, 1000);
             this.panel1.TabIndex = 5;
@@ -154,6 +154,7 @@ namespace WindowsFormsApp1
             this.pbHelp5050.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbHelp5050.TabIndex = 27;
             this.pbHelp5050.TabStop = false;
+            this.pbHelp5050.Click += new System.EventHandler(this.pbHelp5050_Click);
             // 
             // pbHelpPeople
             // 
@@ -405,7 +406,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1536, 999);
+            this.ClientSize = new System.Drawing.Size(1536, 928);
             this.Controls.Add(this.panel1);
             this.Name = "GameShow";
             this.Text = "GameShow";

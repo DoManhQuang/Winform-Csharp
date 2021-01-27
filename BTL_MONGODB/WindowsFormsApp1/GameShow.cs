@@ -19,7 +19,8 @@ namespace WindowsFormsApp1
         public string[] answer_help = { "0", "A", "B", "C", "D" };
         public string[] master_name = { "0", "Albert Einstein", "Isaac Newton", "Carl Friedrich Gauss", "Thomas A. Edison", "Michael Faraday" };
         public string[] phone_name = { "0", "Mẹ", "Bố", "Em Gái", "Anh Trai", "Bạn Thân" };
-        public string[] file_images = { "../Image_KhanGia/logo.jpeg", "../Image_KhanGia/KG_A_1.png", "../Image_KhanGia/KG_B_1.png", "../Image_KhanGia/KG_C_1.png", "../Image_KhanGia/KG_D_1.png" };
+        public string[] file_images = { "../Image/logo.jpeg", "../Image/KG_A_1.png", "../Image/KG_B_1.png", "../Image/KG_C_1.png", "../Image/KG_D_1.png" };
+        public string[] file_false_image = { "../Image/logo.jpeg", "../Image/false_master.png", "../Image/false_phone.png", "../Image/false_people.png", "../Image/false_5050.png" };
         public GameShow()
         {
             InitializeComponent();
@@ -138,6 +139,51 @@ namespace WindowsFormsApp1
             return lstRD;
         }
 
+        void setEnabledIsFalse()
+        {
+            btnA.Enabled = false;
+            btnB.Enabled = false;
+            btnC.Enabled = false;
+            btnD.Enabled = false;
+            pbHelp5050.Enabled = false;
+            pbHelpMaster.Enabled = false;
+            pbHelpPhone.Enabled = false;
+            pbHelpPeople.Enabled = false;
+            pbHelpKG.Enabled = false;
+        }
+
+        void setEnabledIsTrue()
+        {
+            btnA.Enabled = true;
+            btnB.Enabled = true;
+            btnC.Enabled = true;
+            btnD.Enabled = true;
+            pbHelp5050.Enabled = true;
+            pbHelpMaster.Enabled = true;
+            pbHelpPhone.Enabled = true;
+            pbHelpPeople.Enabled = true;
+            pbHelpKG.Enabled = true;
+        }
+
+        void setButtonAnsTrueIsGreen(int ans)
+        {
+            if (ans == -1)
+            {
+                btnA.BackColor = Color.Green;
+            }
+            else if (ans == -2)
+            {
+                btnB.BackColor = Color.Green;
+            }
+            else if (ans == -3)
+            {
+                btnC.BackColor = Color.Green;
+            }
+            else if (ans == -4)
+            {
+                btnD.BackColor = Color.Green;
+            }
+        }
 
         public void SHOW_PLAY_GAME(int cauhoi)
         {
@@ -170,12 +216,12 @@ namespace WindowsFormsApp1
                     if (Int32.Equals(ans, gameplay[cauhoi]["ans_true"].AsInt32))
                     {
                         MessageBox.Show("Đó là câu trả lời đúng.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return 1;
+                        return ans;
                     }
                     else
                     {
                         MessageBox.Show("Đó là câu trả lời sai.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        return 0;
+                        return gameplay[cauhoi]["ans_true"].AsInt32 * -1;
                     }
                 }
             }
@@ -183,25 +229,23 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(ex.ToString());
             }
-            return -1;
+            return 0;
         }
 
         private void btnA_Click(object sender, EventArgs e)
         {
             btnA.BackColor = Color.Orange;
             int rs = ViewAnswer(1);
-            if (rs == -1)
-            {
-                btnA.BackColor = Color.Yellow;
-            }
-            else if (rs == 1)
+            if (rs > 0)
             {
                 btnA.BackColor = Color.Green;
                 GameShow_Load(sender, e);
             }
-            else
+            else if (rs < 0)
             {
                 btnA.BackColor = Color.Red;
+                setEnabledIsFalse();
+                setButtonAnsTrueIsGreen(rs);
             }
         }
 
@@ -209,18 +253,16 @@ namespace WindowsFormsApp1
         {
             btnB.BackColor = Color.Orange;
             int rs = ViewAnswer(2);
-            if (rs == -1)
-            {
-                btnB.BackColor = Color.Yellow;
-            }
-            else if (rs == 1)
+            if (rs > 0)
             {
                 btnB.BackColor = Color.Green;
                 GameShow_Load(sender, e);
             }
-            else
+            else if (rs < 0)
             {
                 btnB.BackColor = Color.Red;
+                setEnabledIsFalse();
+                setButtonAnsTrueIsGreen(rs);
             }
         }
 
@@ -228,18 +270,16 @@ namespace WindowsFormsApp1
         {
             btnC.BackColor = Color.Orange;
             int rs = ViewAnswer(3);
-            if (rs == -1)
-            {
-                btnC.BackColor = Color.Yellow;
-            }
-            else if (rs == 1)
+            if (rs > 0)
             {
                 btnC.BackColor = Color.Green;
                 GameShow_Load(sender, e);
             }
-            else
+            else if (rs < 0)
             {
                 btnC.BackColor = Color.Red;
+                setEnabledIsFalse();
+                setButtonAnsTrueIsGreen(rs);
             }
         }
 
@@ -247,17 +287,16 @@ namespace WindowsFormsApp1
         {
             btnD.BackColor = Color.Orange;
             int rs = ViewAnswer(4);
-            if (rs == -1)
-            {
-                btnD.BackColor = Color.Yellow;
-            }
-            else if (rs == 1)
+            if (rs > 0)
             {
                 btnD.BackColor = Color.Green;
+                GameShow_Load(sender, e);
             }
-            else
+            else if (rs < 0)
             {
                 btnD.BackColor = Color.Red;
+                setEnabledIsFalse();
+                setButtonAnsTrueIsGreen(rs);
             }
         }
 
@@ -265,16 +304,18 @@ namespace WindowsFormsApp1
         {
             try
             {
-                    DialogResult dialogResult = MessageBox.Show("Bạn lựa chọn sự trợ giúp từ Chuyên Gia ?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                    if (dialogResult == DialogResult.OK)
-                    {
-                        int indexAns = gameplay[cauhoi]["ans_true"].AsInt32;
-                        string ansHelp = answer_help[indexAns];
-                        string mater = master_name[indexAns];
-                        MessageBox.Show("Chuyên gia " + mater + ": Tôi nghĩ " + ansHelp + " là câu trả lời đúng.",
-                            "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        pbHelpMaster.Enabled = false;
-                    }
+                DialogResult dialogResult = MessageBox.Show("Bạn lựa chọn sự trợ giúp từ Chuyên Gia ?", "Thông Báo",
+                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.OK)
+                {
+                    int indexAns = gameplay[cauhoi]["ans_true"].AsInt32;
+                    string ansHelp = answer_help[indexAns];
+                    string mater = master_name[indexAns];
+                    MessageBox.Show("Chuyên gia " + mater + ": Tôi nghĩ " + ansHelp + " là câu trả lời đúng.",
+                        "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    pbHelpMaster.Enabled = false;
+                    pbHelpMaster.Image = Image.FromFile(file_false_image[1]);
+                }
             }
             catch (Exception ex)
             {
@@ -286,7 +327,8 @@ namespace WindowsFormsApp1
         {
             try
             {
-                DialogResult dialogResult = MessageBox.Show("Bạn lựa chọn sự trợ giúp từ Người Thân ?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                DialogResult dialogResult = MessageBox.Show("Bạn lựa chọn sự trợ giúp từ Người Thân ?", "Thông Báo",
+                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.OK)
                 {
                     int indexAns = gameplay[cauhoi]["ans_true"].AsInt32;
@@ -294,7 +336,8 @@ namespace WindowsFormsApp1
                     string name = phone_name[indexAns];
                     MessageBox.Show("Người Thân " + name + ": Tôi nghĩ " + ansHelp + " là câu trả lời đúng.",
                         "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    pbHelpPeople.Enabled = false;
+                    pbHelpPhone.Enabled = false;
+                    pbHelpPhone.Image = Image.FromFile(file_false_image[2]);
                 }
             }
             catch (Exception ex)
@@ -308,13 +351,34 @@ namespace WindowsFormsApp1
 
             try
             {
-                DialogResult dialogResult = MessageBox.Show("Bạn lựa chọn sự trợ giúp từ Khán Giả ?", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                DialogResult dialogResult = MessageBox.Show("Bạn lựa chọn sự trợ giúp từ Khán Giả ?", "Thông Báo",
+                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.OK)
                 {
                     int indexAns = gameplay[cauhoi]["ans_true"].AsInt32;
                     string local_images = file_images[indexAns];
                     pbHelpKG.Image = Image.FromFile(local_images);
-                    pbHelpKG.Enabled = false;
+                    pbHelpPeople.Enabled = false;
+                    pbHelpPeople.Image = Image.FromFile(file_false_image[3]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void pbHelp5050_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult dialogResult = MessageBox.Show("Bạn lựa chọn sự trợ giúp 50:50 ?", "Thông Báo",
+                    MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.OK)
+                {
+
+                    pbHelp5050.Enabled = false;
+                    pbHelp5050.Image = Image.FromFile(file_false_image[4]);
                 }
             }
             catch (Exception ex)
@@ -326,6 +390,7 @@ namespace WindowsFormsApp1
         private void btnChoiLai_Click(object sender, EventArgs e)
         {
             cauhoi = -1;
+            setEnabledIsTrue();
             GameShow_Load(sender, e);
         }
 
