@@ -16,11 +16,19 @@ namespace WindowsFormsApp1
         public static List<BsonDocument> gameplay;
         public static int cauhoi = -1;
         public int[] visit_help = { 0, 0, 0, 0, 0 };
+
         public string[] answer_help = { "0", "A", "B", "C", "D" };
-        public string[] master_name = { "0", "Albert Einstein", "Isaac Newton", "Carl Friedrich Gauss", "Thomas A. Edison", "Michael Faraday" };
+
+        public string[] master_name = { "0", "Albert Einstein", "Isaac Newton", 
+            "Carl Friedrich Gauss", "Thomas A. Edison", "Michael Faraday" };
+
         public string[] phone_name = { "0", "Mẹ", "Bố", "Em Gái", "Anh Trai", "Bạn Thân" };
-        public string[] file_images = { "../Image/logo.jpeg", "../Image/KG_A_1.png", "../Image/KG_B_1.png", "../Image/KG_C_1.png", "../Image/KG_D_1.png" };
-        public string[] file_false_image = { "../Image/logo.jpeg", "../Image/false_master.png", "../Image/false_phone.png", "../Image/false_people.png", "../Image/false_5050.png" };
+
+        public string[] file_images = { "../Image/logo.jpeg", "../Image/KG_A_1.png", 
+            "../Image/KG_B_1.png", "../Image/KG_C_1.png", "../Image/KG_D_1.png" };
+
+        public string[] file_false_image = { "../Image/logo.jpeg", "../Image/false_master.png", 
+            "../Image/false_phone.png", "../Image/false_people.png", "../Image/false_5050.png" };
         public GameShow()
         {
             InitializeComponent();
@@ -185,17 +193,16 @@ namespace WindowsFormsApp1
             }
         }
 
-        public void SHOW_PLAY_GAME(int cauhoi)
+        public void resetButton_Textbox()
         {
-            if (cauhoi == 0)
-            {
-                gameplay = RANDOM_LIST_QnA();
-                setColorButton();
-            }
             btnA.BackColor = Color.Yellow;
             btnB.BackColor = Color.Yellow;
             btnC.BackColor = Color.Yellow;
             btnD.BackColor = Color.Yellow;
+            btnA.Enabled = true;
+            btnB.Enabled = true;
+            btnC.Enabled = true;
+            btnD.Enabled = true;
             pbHelpKG.Image = Image.FromFile(file_images[0]);
             setButtonColor(cauhoi);
             btnA.Text = "A: " + gameplay[cauhoi]["ans1"].ToString();
@@ -203,7 +210,15 @@ namespace WindowsFormsApp1
             btnC.Text = "C: " + gameplay[cauhoi]["ans3"].ToString();
             btnD.Text = "D: " + gameplay[cauhoi]["ans4"].ToString();
             txtCauHoi.Text = ("Câu Hỏi: " + gameplay[cauhoi]["question"].ToString()).ToUpper();
-
+        }
+        public void SHOW_PLAY_GAME(int cauhoi)
+        {
+            if (cauhoi == 0)
+            {
+                gameplay = RANDOM_LIST_QnA();
+                setColorButton();
+            }
+            resetButton_Textbox();
         }
 
         public int ViewAnswer(int ans)
@@ -368,6 +383,37 @@ namespace WindowsFormsApp1
             }
         }
 
+        public void setButton5050(int ans)
+        {
+            if(ans == 1)
+            {
+                btnB.BackColor = Color.Red;
+                btnB.Enabled = false;
+                btnD.BackColor = Color.Red;
+                btnD.Enabled = false;
+            }
+            else if (ans == 2)
+            {
+                btnA.BackColor = Color.Red;
+                btnA.Enabled = false;
+                btnC.BackColor = Color.Red;
+                btnC.Enabled = false;
+            }
+            else if (ans == 3)
+            {
+                btnA.BackColor = Color.Red;
+                btnA.Enabled = false;
+                btnD.BackColor = Color.Red;
+                btnD.Enabled = false;
+            }
+            else if (ans == 4)
+            {
+                btnA.BackColor = Color.Red;
+                btnA.Enabled = false;
+                btnB.BackColor = Color.Red;
+                btnB.Enabled = false;
+            }
+        }
         private void pbHelp5050_Click(object sender, EventArgs e)
         {
             try
@@ -376,7 +422,8 @@ namespace WindowsFormsApp1
                     MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.OK)
                 {
-
+                    int ans = gameplay[cauhoi]["ans_true"].AsInt32;
+                    setButton5050(ans);
                     pbHelp5050.Enabled = false;
                     pbHelp5050.Image = Image.FromFile(file_false_image[4]);
                 }

@@ -68,7 +68,7 @@ namespace WindowsFormsApp1
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.btnChoiLai);
@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.btn10);
             this.panel1.Controls.Add(this.btn13);
             this.panel1.Controls.Add(this.btn15);
-            this.panel1.Location = new System.Drawing.Point(0, -71);
+            this.panel1.Location = new System.Drawing.Point(2, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1533, 1000);
             this.panel1.TabIndex = 5;
@@ -138,10 +138,10 @@ namespace WindowsFormsApp1
             this.txtCauHoi.Enabled = false;
             this.txtCauHoi.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCauHoi.ForeColor = System.Drawing.Color.Black;
-            this.txtCauHoi.Location = new System.Drawing.Point(422, 343);
+            this.txtCauHoi.Location = new System.Drawing.Point(295, 249);
             this.txtCauHoi.Multiline = true;
             this.txtCauHoi.Name = "txtCauHoi";
-            this.txtCauHoi.Size = new System.Drawing.Size(529, 125);
+            this.txtCauHoi.Size = new System.Drawing.Size(739, 302);
             this.txtCauHoi.TabIndex = 28;
             this.txtCauHoi.Text = "Câu Hỏi";
             // 
@@ -192,9 +192,9 @@ namespace WindowsFormsApp1
             // btnD
             // 
             this.btnD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnD.Location = new System.Drawing.Point(871, 713);
+            this.btnD.Location = new System.Drawing.Point(734, 847);
             this.btnD.Name = "btnD";
-            this.btnD.Size = new System.Drawing.Size(196, 70);
+            this.btnD.Size = new System.Drawing.Size(300, 99);
             this.btnD.TabIndex = 23;
             this.btnD.Text = "D";
             this.btnD.UseVisualStyleBackColor = true;
@@ -203,9 +203,9 @@ namespace WindowsFormsApp1
             // btnC
             // 
             this.btnC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnC.Location = new System.Drawing.Point(328, 713);
+            this.btnC.Location = new System.Drawing.Point(295, 847);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(196, 70);
+            this.btnC.Size = new System.Drawing.Size(277, 99);
             this.btnC.TabIndex = 22;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
@@ -214,9 +214,9 @@ namespace WindowsFormsApp1
             // btnB
             // 
             this.btnB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnB.Location = new System.Drawing.Point(871, 536);
+            this.btnB.Location = new System.Drawing.Point(734, 670);
             this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(196, 70);
+            this.btnB.Size = new System.Drawing.Size(300, 101);
             this.btnB.TabIndex = 21;
             this.btnB.Text = "B";
             this.btnB.UseVisualStyleBackColor = true;
@@ -225,9 +225,9 @@ namespace WindowsFormsApp1
             // btnA
             // 
             this.btnA.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnA.Location = new System.Drawing.Point(328, 536);
+            this.btnA.Location = new System.Drawing.Point(295, 670);
             this.btnA.Name = "btnA";
-            this.btnA.Size = new System.Drawing.Size(196, 70);
+            this.btnA.Size = new System.Drawing.Size(277, 101);
             this.btnA.TabIndex = 20;
             this.btnA.Text = "A";
             this.btnA.UseVisualStyleBackColor = true;
@@ -237,7 +237,7 @@ namespace WindowsFormsApp1
             // 
             this.btn1.Enabled = false;
             this.btn1.ForeColor = System.Drawing.Color.Black;
-            this.btn1.Location = new System.Drawing.Point(49, 768);
+            this.btn1.Location = new System.Drawing.Point(49, 921);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(140, 39);
             this.btn1.TabIndex = 18;
@@ -248,7 +248,7 @@ namespace WindowsFormsApp1
             // 
             this.btn6.Enabled = false;
             this.btn6.ForeColor = System.Drawing.Color.Black;
-            this.btn6.Location = new System.Drawing.Point(49, 569);
+            this.btn6.Location = new System.Drawing.Point(49, 636);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(140, 39);
             this.btn6.TabIndex = 17;
@@ -259,7 +259,7 @@ namespace WindowsFormsApp1
             // 
             this.btn2.Enabled = false;
             this.btn2.ForeColor = System.Drawing.Color.Black;
-            this.btn2.Location = new System.Drawing.Point(49, 728);
+            this.btn2.Location = new System.Drawing.Point(49, 862);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(140, 39);
             this.btn2.TabIndex = 5;
@@ -270,7 +270,7 @@ namespace WindowsFormsApp1
             // 
             this.btn7.Enabled = false;
             this.btn7.ForeColor = System.Drawing.Color.Black;
-            this.btn7.Location = new System.Drawing.Point(49, 529);
+            this.btn7.Location = new System.Drawing.Point(49, 574);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(140, 39);
             this.btn7.TabIndex = 15;
@@ -281,7 +281,7 @@ namespace WindowsFormsApp1
             // 
             this.btn4.Enabled = false;
             this.btn4.ForeColor = System.Drawing.Color.Black;
-            this.btn4.Location = new System.Drawing.Point(49, 648);
+            this.btn4.Location = new System.Drawing.Point(49, 751);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(140, 39);
             this.btn4.TabIndex = 14;
@@ -292,7 +292,7 @@ namespace WindowsFormsApp1
             // 
             this.btn11.Enabled = false;
             this.btn11.ForeColor = System.Drawing.Color.Black;
-            this.btn11.Location = new System.Drawing.Point(49, 369);
+            this.btn11.Location = new System.Drawing.Point(49, 344);
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(140, 39);
             this.btn11.TabIndex = 13;
@@ -303,7 +303,7 @@ namespace WindowsFormsApp1
             // 
             this.btn9.Enabled = false;
             this.btn9.ForeColor = System.Drawing.Color.Black;
-            this.btn9.Location = new System.Drawing.Point(49, 449);
+            this.btn9.Location = new System.Drawing.Point(49, 456);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(140, 39);
             this.btn9.TabIndex = 12;
@@ -314,7 +314,7 @@ namespace WindowsFormsApp1
             // 
             this.btn3.Enabled = false;
             this.btn3.ForeColor = System.Drawing.Color.Black;
-            this.btn3.Location = new System.Drawing.Point(49, 688);
+            this.btn3.Location = new System.Drawing.Point(49, 802);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(140, 39);
             this.btn3.TabIndex = 11;
@@ -325,7 +325,7 @@ namespace WindowsFormsApp1
             // 
             this.btn12.Enabled = false;
             this.btn12.ForeColor = System.Drawing.Color.Black;
-            this.btn12.Location = new System.Drawing.Point(49, 329);
+            this.btn12.Location = new System.Drawing.Point(49, 287);
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(140, 39);
             this.btn12.TabIndex = 10;
@@ -336,7 +336,7 @@ namespace WindowsFormsApp1
             // 
             this.btn8.Enabled = false;
             this.btn8.ForeColor = System.Drawing.Color.Black;
-            this.btn8.Location = new System.Drawing.Point(49, 489);
+            this.btn8.Location = new System.Drawing.Point(49, 512);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(140, 39);
             this.btn8.TabIndex = 9;
@@ -348,7 +348,7 @@ namespace WindowsFormsApp1
             this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn5.Enabled = false;
             this.btn5.ForeColor = System.Drawing.Color.Black;
-            this.btn5.Location = new System.Drawing.Point(49, 608);
+            this.btn5.Location = new System.Drawing.Point(49, 694);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(140, 39);
             this.btn5.TabIndex = 8;
@@ -359,7 +359,7 @@ namespace WindowsFormsApp1
             // 
             this.btn14.Enabled = false;
             this.btn14.ForeColor = System.Drawing.Color.Black;
-            this.btn14.Location = new System.Drawing.Point(49, 249);
+            this.btn14.Location = new System.Drawing.Point(49, 164);
             this.btn14.Name = "btn14";
             this.btn14.Size = new System.Drawing.Size(140, 39);
             this.btn14.TabIndex = 7;
@@ -371,7 +371,7 @@ namespace WindowsFormsApp1
             this.btn10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn10.Enabled = false;
             this.btn10.ForeColor = System.Drawing.Color.Black;
-            this.btn10.Location = new System.Drawing.Point(49, 409);
+            this.btn10.Location = new System.Drawing.Point(49, 400);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(140, 39);
             this.btn10.TabIndex = 6;
@@ -382,7 +382,7 @@ namespace WindowsFormsApp1
             // 
             this.btn13.Enabled = false;
             this.btn13.ForeColor = System.Drawing.Color.Black;
-            this.btn13.Location = new System.Drawing.Point(49, 289);
+            this.btn13.Location = new System.Drawing.Point(49, 228);
             this.btn13.Name = "btn13";
             this.btn13.Size = new System.Drawing.Size(140, 39);
             this.btn13.TabIndex = 19;
@@ -394,7 +394,7 @@ namespace WindowsFormsApp1
             this.btn15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn15.Enabled = false;
             this.btn15.ForeColor = System.Drawing.Color.Black;
-            this.btn15.Location = new System.Drawing.Point(49, 209);
+            this.btn15.Location = new System.Drawing.Point(49, 101);
             this.btn15.Name = "btn15";
             this.btn15.Size = new System.Drawing.Size(140, 39);
             this.btn15.TabIndex = 16;
@@ -406,10 +406,11 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1536, 928);
+            this.ClientSize = new System.Drawing.Size(1536, 1054);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GameShow";
-            this.Text = "GameShow";
+            this.Text = "AI LA TRIEU PHU ?";
             this.Load += new System.EventHandler(this.GameShow_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
