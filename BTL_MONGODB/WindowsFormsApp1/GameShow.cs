@@ -135,7 +135,7 @@ namespace WindowsFormsApp1
 
         public List<BsonDocument> RANDOM_LIST_QnA()
         {
-            List<BsonDocument> lstRD = GetBL.GET_LIST_FULL_DATA_TABLE_QnA();
+            List<BsonDocument> lstRD = GetBL.GET_LIST_RANDOM_DATA_TABLE_QnA();
             return lstRD;
         }
 

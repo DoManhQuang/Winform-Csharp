@@ -17,5 +17,12 @@ namespace WindowsFormsApp1
             List<BsonDocument> lstData = GetDA.Query_SELECT_O_FROM_TABLE(tableQA);
             return lstData;
         }
+
+        public List<BsonDocument> GET_LIST_RANDOM_DATA_TABLE_QnA()
+        {
+            String tableQA = "question_and_answer";
+            List<BsonDocument> lstData = GetDA.Query_SELECT_RANDOM_FROM_TABLE(tableQA);
+            return lstData;
+        }
     }
 }
