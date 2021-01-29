@@ -262,6 +262,10 @@ namespace WindowsFormsApp1
                 setEnabledIsFalse();
                 setButtonAnsTrueIsGreen(rs);
             }
+            else if (rs == 0)
+            {
+                btnA.BackColor = Color.Yellow;
+            }
         }
 
         private void btnB_Click(object sender, EventArgs e)
@@ -278,6 +282,10 @@ namespace WindowsFormsApp1
                 btnB.BackColor = Color.Red;
                 setEnabledIsFalse();
                 setButtonAnsTrueIsGreen(rs);
+            }
+            else if (rs == 0)
+            {
+                btnB.BackColor = Color.Yellow;
             }
         }
 
@@ -296,6 +304,10 @@ namespace WindowsFormsApp1
                 setEnabledIsFalse();
                 setButtonAnsTrueIsGreen(rs);
             }
+            else if (rs == 0)
+            {
+                btnC.BackColor = Color.Yellow;
+            }
         }
 
         private void btnD_Click(object sender, EventArgs e)
@@ -312,6 +324,10 @@ namespace WindowsFormsApp1
                 btnD.BackColor = Color.Red;
                 setEnabledIsFalse();
                 setButtonAnsTrueIsGreen(rs);
+            }
+            else if (rs == 0)
+            {
+                btnC.BackColor = Color.Yellow;
             }
         }
 
